@@ -11,27 +11,40 @@ body {
     width: 100%;
 }
 
-header {
-    position: relative;
+main {
+    height: 100%;
+    padding-top: 120px;
+    font-size: 14px;
 }
 
 /* utils */
 .container-big {
     width: 70%;
-    height: 100%;
     margin: 0 auto;
 
 }
 
 .container-small {
-    width: 60%;
-    height: 100%;
+    width: 50%;
     margin: 0 auto;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.mt-30 {
+    margin-top: 30px;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .flex-col {
@@ -48,11 +61,29 @@ header {
     padding-right: 10px;
 }
 
-a.button-blue {
+a.btn-blue {
     background-color: rgb(0, 97, 255);
     color: rgb(255, 255, 255);
     padding: 6px 12px;
     text-decoration: none;
+}
+
+.check {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+.border {
+    border: 1px solid rgb(215, 211, 211);
+}
+
+ul li {
+    list-style-type: none;
 }
 
 /* header */
@@ -63,14 +94,16 @@ a.button-blue {
     width: 100%;
     height: 60px;
     position: fixed;
-    padding-left: 10px;
-    padding-right: 10px;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
     box-shadow: 0 2px 8px rgb(173, 173, 173);
+    z-index: 1;
 }
 
 .nav-bar-left,
 .nav-bar-right {
-    width: 50%;
+    flex-basis: 50%;
     line-height: 60px;
     vertical-align: middle;
 }
@@ -88,8 +121,14 @@ a.button-blue {
 /* jumbotron */
 .jumbotron {
     background-color: rgb(180, 208, 231);
-    height: 650px;
-    padding-top: 120px;
+    height: 680px;
+    padding-top: 140px;
+}
+
+.jumbotron h1 {
+    font-size: 62px;
+    font-weight: 800;
+    padding-bottom: 50px;
 }
 
 .jumbotron .text {
@@ -99,12 +138,6 @@ a.button-blue {
     align-items: flex-start;
 }
 
-.jumbotron h1 {
-    font-size: 62px;
-    font-weight: 800;
-    padding-bottom: 50px;
-}
-
 a.skip {
     color: rgb(0, 0, 0);
 }
@@ -112,10 +145,77 @@ a.skip {
 .jumbotron figure {
     width: 70%;
     height: 300px;
-    position: relative;
 }
 
 .jumbo-img {
-    width: 100%;
-    position: absolute
+    width: 90%;
+}
+
+/* main */
+.row-plans {
+    height: 800px;
+    font-size: 12px;
+}
+
+.row-plans h2 {
+    font-size: 30px;
+}
+
+.check.blue {
+    border-color: rgb(0, 97, 255);
+    border-width: 4px;
+}
+
+.billing p {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.card {
+    flex-basis: calc(100% / 3 - 30px);
+    padding: 10px 20px;
+    line-height: 30px;
+}
+
+.customer {
+    border-bottom: 1px solid rgb(173, 173, 173);
+    text-align: center;
+}
+
+.fa-check {
+    color: rgb(0, 97, 255);
+}
+
+.info,
+.description,
+.choice,
+hr,
+.highlights {
+    margin-bottom: 30px;
+}
+
+.timing {
+    color: rgb(173, 173, 173);
+}
+
+.row-enterprise {
+    font-size: 12px;
+
+}
+
+.team {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    border-bottom: none;
+}
+
+.row-enterprise .contact {
+    height: 150px;
+    padding: 20px;
+}
+
+.contact .btn-blue {
+    text-align: center;
 }
