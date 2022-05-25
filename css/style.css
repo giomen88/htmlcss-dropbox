@@ -62,14 +62,6 @@ footer {
     justify-content: space-between;
 }
 
-.nav-bar a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .btn-blue {
     background-color: rgb(0, 97, 255);
     color: rgb(255, 255, 255);
@@ -135,11 +127,31 @@ hr {
     z-index: 1;
 }
 
+.nav-bar .link {
+    display: inline-block;
+    height: 60px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-bar .link:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
 .nav-bar-left,
 .nav-bar-right {
     flex-basis: 50%;
     line-height: 60px;
     vertical-align: middle;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
 }
 
 .nav-bar-right {
@@ -148,12 +160,6 @@ hr {
 
 .nav-bar-right .btn-blue {
     color: rgb(255, 255, 255);
-}
-
-.logo {
-    display: inline-block;
-    vertical-align: middle;
-    height: 20px;
 }
 
 /* jumbotron */
