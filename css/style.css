@@ -110,9 +110,9 @@ ul li {
     color: rgb(0, 97, 255);
 }
 
-.hr {
+hr {
     display: block;
-    width: 40%;
+    width: 30%;
     margin: 20px 0;
 }
 
@@ -325,15 +325,14 @@ a.skip {
 .small-box {
     width: 50%;
     height: 50%;
-    line-height: 100%;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .small-box img {
     width: 50%;
     filter: invert(100%);
-    display: inline-block;
 }
 
 .designit {
@@ -413,6 +412,10 @@ p.author {
 
 #faq .row {
     flex-basis: 30px;
+}
+
+#faq hr {
+    width: 100%;
 }
 
 .question {
