@@ -311,7 +311,6 @@ a.skip {
     text-align: center;
 }
 
-
 /* operations */
 .operation img {
     width: 100%;
@@ -441,8 +440,6 @@ p.author {
     text-align: end;
 }
 
-.question::after .arrow:hover {}
-
 /* footer */
 .nav-bar-top {
     height: 300px;
@@ -466,7 +463,11 @@ p.author {
     margin-bottom: 10px;
 }
 
-.col a {
+.nav-bar-top .col a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+.nav-bar-bottom hr {
+    width: 10%;
 }
