@@ -95,6 +95,7 @@ ul li {
 .check-list li {
     display: flex;
     align-items: baseline;
+    margin-bottom: 5px;
 }
 
 .list-icon i,
@@ -230,22 +231,28 @@ a.skip {
 }
 
 .bottom-card {
-    line-height: 30px;
-    padding: 10px 20px;
+    height: 700px;
+    line-height: 20px;
+    padding: 20px 30px;
 }
 
 .bottom-card h3 {
     font-size: 18px;
 }
 
+.bottom-card .info {
+    height: 250px;
+}
+
 .info,
+.timing,
 .list-icon,
-.links,
+.sale-link,
 .check-list {
     margin-bottom: 30px;
 }
 
-.links .btn-blue {
+.sale-link .btn-blue {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
@@ -423,7 +430,6 @@ p.author {
 }
 
 /* faq */
-
 #faq .row {
     flex-basis: 30px;
 }
